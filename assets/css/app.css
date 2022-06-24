@@ -430,22 +430,29 @@ section.education .education-card p {
 }
 
 section.experience .experience-details {
-
+  display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
  
 }
 section.experience .experience-card { 
  
-  max-width: 600px;
+  flex: 1;
+  min-width: 260px;
   padding: 1rem;
-  margin: 0 auto;
-  margin-bottom: 10px;
+  margin: 0.5rem 1rem;
   background-color: #191b1f;
   border-radius: 0.25rem;
   text-align: left;
   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.04);
 }
+
+.experience-card:hover{
+  transform: scale(1.2);
+  color: chocolate;
+}
+
 section.experience .experience-card h4 {
   text-transform: uppercase;
   font-weight: 600;
@@ -494,6 +501,3 @@ section.contact-me h1 {
   padding: 0;
   margin: 0 0 15px 0;
 }
-
-
-
